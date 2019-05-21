@@ -40,5 +40,6 @@ De plus, il devra être responsive "mobil first".
 ## TODO: 
 
 -Etape 1 : fait
+-Etape 2 : en cours
   
   

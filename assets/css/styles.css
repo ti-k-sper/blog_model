@@ -1,8 +1,10 @@
+/*General*/
 body{
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
-
+/*menu titre connexion*/
 body .menu {
     background-color: #9b59b6;
     color: #FFFFFF;
@@ -83,18 +85,16 @@ body .menu nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
   }
-
+/*fin menu titre connexion
+  header*/
 header{
   position: relative;
   margin: 0 2%;
+  margin-bottom: 50px;
 }
 
 header img{
   width: 100%;
-}
-
-section{
-  margin: 1% 2%;
 }
 
 .div_profil{
@@ -108,8 +108,20 @@ section{
 .img_profil{
   border-radius: 50%;
 }
+/*fin header
+  section general*/
+section{
+  margin: 1% 2%;
+}
 
-.articles{
+section h2{
+  font-family: 'Roboto blod', sans-serif;
+  font-size: 20px;
+  color: #9b59b6;
+  text-decoration: underline;
+}
+/*section article index.html*/
+#sectionArticleIndex .articles{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -119,25 +131,24 @@ section{
   grid-gap: 2%;
 }
 
-article{
+#sectionArticleIndex article{
   margin: 0;
   padding: 0;
 }
 
-article figure img{
+#sectionArticleIndex article figure img{
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-figure{
+#sectionArticleIndex figure{
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-
-figcaption{
+#sectionArticleIndex figcaption{
   position: absolute;
   width: 90%;
   top: 0;
@@ -147,14 +158,152 @@ figcaption{
   text-transform: uppercase;
   font-family: 'Roboto blod', sans-serif;
   font-size: 12px;
-  background-color: black;
+  background-color: #9b59b6;
   color: white;
   z-index: 2;
 }
+/*fin section article index.html
+  section article allArticle.html*/
+#sectionArticle .articles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+#sectionArticle article{
+  margin: 2% 0;
+  padding: 0;
+}
+
+#sectionArticle figure{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 25px 1fr 12px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img titre"
+                       "img p"
+                       "img a";
+  grid-column-gap: 2%;
+}
+
+#sectionArticle article figure img{
+  grid-area: img;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#sectionArticle h3{
+  grid-area: titre;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto blod', sans-serif;
+  font-size: 15px;
+  background-color: #9b59b6;
+  color: white;
+}
+
+#sectionArticle p{
+  grid-area: p;
+  height: 100px;
+  margin: 0;
+  margin-top: 1%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+#sectionArticle a{
+  grid-area: a;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  font-size: 12px;
+}
+/*fin section allArticle.html
+  section article article.html*/
+#article .articles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#article article{
+  margin: 2% 0;
+  padding: 0;
+}
+
+#article figure{
+  margin: 0;
+  padding: 0;
+}
+
+#article article figure img{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#article h3{
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto blod', sans-serif;
+  font-size: 15px;
+  background-color: #9b59b6;
+  color: white;
+}
+
+#article p{
+  height: 100px;
+  margin: 0;
+  margin-top: 1%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+/*fin section article article.html
+  section pagination general*/
+.pagination{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.pagination ul{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  display: flex;
+}
+
+.pagination li{
+  width: 25px;
+  margin: 2%;
+  padding: 5px; 
+  border: solid 1px #9b59b6;
+}
+
+.pagination a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Roboto blod', sans-serif;
+  font-size: 15px;
+  color: #9b59b6;
+}
+/*fin section pagination general
+  footer general*/
 footer{
   background-color: #9b59b6;
   margin: 0 2%;
+  margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -186,3 +335,4 @@ footer nav a{
 footer div{
   text-align: center;
 }
+/*fin footer general*/

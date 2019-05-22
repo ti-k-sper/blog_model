@@ -98,15 +98,18 @@ header img{
 }
 
 .div_profil{
-  width: 100px;
-  height: 100px;
+  width: 100%;
   position: absolute;
   top: 75%;
-  left: 35%;
+  left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .img_profil{
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 /*fin header
   section general*/
@@ -322,7 +325,7 @@ footer nav ul{
   padding: 0;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: ". . . .";
 }
 

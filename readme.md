@@ -37,9 +37,29 @@ De plus, il devra être responsive "mobil first".
 - Remplir au fur et à mesure le readme.md
 
 
+### Etape 3 :  
+
+- Faire une pagination de 10 articles sur 2 pages (fichier allArticlesP1 et allArticlesP2)
+- Faire une page "Article"
+- Faire une page "Connexion"
+- Faire une page "Inscription"
+- Linker les pages entre-elles
+
+
+### Etape 4 :  
+
+- Faire mise en forme "mobil first"
+- Faire media query
+
+
+### Etape 5 :  
+
+- Présenter la maquette au client
+
 ## TODO: 
 
--Etape 1 : fait  
--Etape 2 : en cours  
-  
-  
+- Etape 1 : fait  
+- Etape 2 : fait
+- Etape 3 : fait
+- Etape 4 : mobil first fait, media query en cours
+- Etape 5 : fait

@@ -195,6 +195,7 @@ section h2{
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
 }
 
 #sectionArticle h3{
@@ -211,7 +212,6 @@ section h2{
 
 #sectionArticle p{
   grid-area: p;
-  height: 100px;
   margin: 0;
   margin-top: 1%;
   font-family: 'Roboto', sans-serif;
@@ -263,7 +263,6 @@ section h2{
 }
 
 #article p{
-  height: 100px;
   margin: 0;
   margin-top: 1%;
   font-family: 'Roboto', sans-serif;
@@ -302,6 +301,65 @@ section h2{
   color: #9b59b6;
 }
 /*fin section pagination general
+  formulaire connexion et inscription*/
+section.login-container{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+  
+section.login-container > div { /*on prend juste la div*/
+  width: 450px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section.login-container form{
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="password"],
+form input[type="text"],
+form button[type="submit"]{
+  margin-bottom: 32px;
+  padding: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: 0;
+}
+
+form input[type="password"]:focus,
+form input[type="password"]:hover,
+form input[type="text"]:focus,
+form input[type="text"]:hover{
+  background-color: #ccc;
+}
+
+form button[type="submit"]{
+  font-weight: bold;
+  color: #black;
+  text-transform: uppercase;
+  background-color: #e67e22;
+}
+
+form button[type="submit"]:focus,
+form button[type="submit"]:hover{
+  background-color: #d35400;
+}
+
+.danger {
+  border: 3px solid red !important;
+}
+/*fin formulaire
   footer general*/
 footer{
   background-color: #9b59b6;
